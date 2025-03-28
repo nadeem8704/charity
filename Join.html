@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Charity - Join Us</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+       body {
+           background: #f7f7f7;
+       }
+       .card {
+           margin-top: 50px;
+       }
+       .nav-logo {
+           font-size: 1.5rem;
+           font-weight: bold;
+       }
+   </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand nav-logo" href="/">Charity</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="/join">Join Us</a></li>
+               <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+           </ul>
+       </div>
+   </nav>
+
+   <div class="container">
+       <div class="row">
+           <!-- Create Account Section -->
+           <div class="col-md-6">
+               <div class="card">
+                   <div class="card-body">
+                       <h3 class="card-title">Create an Account</h3>
+                       <form action="/create_account" method="post">
+                           <div class="form-group">
+                               <label for="username">Username</label>
+                               <input type="text" class="form-control" id="username" name="username" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="password">Password</label>
+                               <input type="password" class="form-control" id="password" name="password" required>
+                           </div>
+                           <button type="submit" class="btn btn-success">Sign Up</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+           <!-- Login and Donate Section -->
+           <div class="col-md-6">
+               <div class="card">
+                   <div class="card-body">
+                       <h3 class="card-title">Login</h3>
+                       <form action="/login" method="post">
+                           <div class="form-group">
+                               <label for="login_username">Username</label>
+                               <input type="text" class="form-control" id="login_username" name="username" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="login_password">Password</label>
+                               <input type="password" class="form-control" id="login_password" name="password" required>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Login</button>
+                       </form>
+                       <hr>
+                       <h3 class="card-title">Donate</h3>
+                       <p>Your contributions make a difference. Every donation helps us reach more people in need.</p>
+                       <a href="/donate" class="btn btn-warning">Donate Now</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <footer class="bg-light text-center py-3 mt-5">
+       <p>&copy; 2025 Charity Organization. All rights reserved.</p>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
